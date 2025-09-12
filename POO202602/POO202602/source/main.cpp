@@ -3,6 +3,7 @@
 #include "Item.h"
 #include "Rectangulo.h"
 #include "Circulo.h"
+#include "Estudiantes.h"
 
 
 class
@@ -55,7 +56,6 @@ main() {
 
 	Fecha fecha;
 	fecha.getFecha();
-	std::cin.get();
 
 	Circulo miCirculo;
 	miCirculo.radio = 7.0;
@@ -64,5 +64,19 @@ main() {
 
 	std::cout << "El area del circulo es: " << area << std::endl;
 
+	Estudiantes miEstudiante[5];
+	std::cout << "----- Estudiantes -----" << std::endl;
+
+	miEstudiante[0].setEstudiantes("Eduardo", 23);
+	miEstudiante[1].setEstudiantes("Kevin", 20);
+	miEstudiante[2].setEstudiantes("Jose", 21);
+	miEstudiante[3].setEstudiantes("Misael", 22);
+	miEstudiante[4].setEstudiantes("Miguel", 19);
+
+	for (int i = 0; i < 5; i++) {
+		miEstudiante[i].informacion();
+	}
+
+	std::cin.get();
 	return 0;
 }

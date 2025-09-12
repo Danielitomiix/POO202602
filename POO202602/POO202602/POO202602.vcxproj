@@ -165,10 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Circulo.h" />
+    <ClInclude Include="include\Estudiantes.h" />
     <ClInclude Include="include\Inventary.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
     <ClInclude Include="include\Rectangulo.h" />
+    <ClInclude Include="source\main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
