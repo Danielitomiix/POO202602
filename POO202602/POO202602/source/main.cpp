@@ -2,6 +2,7 @@
 #include "Inventary.h"
 #include "Item.h"
 #include "Rectangulo.h"
+#include "Circulo.h"
 
 
 class
@@ -55,5 +56,13 @@ main() {
 	Fecha fecha;
 	fecha.getFecha();
 	std::cin.get();
+
+	Circulo miCirculo;
+	miCirculo.radio = 7.0;
+
+	double area = miCirculo.calcularArea();
+
+	std::cout << "El area del circulo es: " << area << std::endl;
+
 	return 0;
 }
