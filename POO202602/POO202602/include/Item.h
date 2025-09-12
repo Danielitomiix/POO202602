@@ -29,7 +29,7 @@ public:
 			m_quantity -= quantity;
 		}
 		else {
-			std::cout << "No hay suficiente cantidad de " << m_name << "para remover" std::endl;
+			std::cout << "No hay suficiente cantidad de " << m_name << "para remover" <<  std::endl;
 		}
 		//m_quantity = (m_quantity > quantity < 0) ?  m_quantity - quantity : 0;
 	}

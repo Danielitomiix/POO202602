@@ -1,6 +1,7 @@
 #include "Prerequisitos.h"
 #include "Inventary.h"
 #include "Item.h"
+#include "Rectangulo.h"
 
 
 class
@@ -32,8 +33,6 @@ private:
 	int m_healt;
 	bool isCharacterAlive = false;
 
-protected:
-	int m_healt;
 };
 
 

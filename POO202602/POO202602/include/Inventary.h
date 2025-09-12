@@ -2,16 +2,15 @@
 #include "Prerequisitos.h"
 #include "Item.h"
 
+
+
 class Inventary {
 public:
 	Inventary() = default;
 	~Inventary() = default;
 
-private:
-	std::vector<Item> m_items;
-
 	void
-		addItem(const std::string& name, int   quiantity) {
+		addItem(const std::string& name, int quiantity) {
 		// Buscar si el item ya existe y sumarle la cantidad
 		for (auto& item : m_items) {
 			if (item.getName() == name) {
@@ -34,10 +33,9 @@ private:
 		// Mostrar los items en el inventario
 		std::cout << "Inventario:" << std::endl;
 		for (const auto& item : m_items) {
-			std::cout << " - " << item.getName() << ": " << item.getQuantity() << std::endl;
+			std::cout << "- " << item.getName() << ": " << item.getQuantity() << std::endl;
 		}
 	}
-
 
 	void
 		useItem(const std::string& name, int quantity) {
@@ -55,4 +53,6 @@ private:
 		std::cout << "No tienes " << name << " en el inventario" << std::endl;
 	}
 
+private:
+	std::vector<Item> m_items;
 };
