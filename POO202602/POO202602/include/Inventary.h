@@ -44,7 +44,7 @@ public:
 				item.remove(quantity);
 				// Si la cantidad del item es 0, eliminarlo del inventario
 				if (item.getQuantity() == 0) {
-					m_items.erase(std::remove(m_items.begin(), m_items.end(), item), m_items.end());
+					//m_items.erase(std::remove(m_items.begin(), m_items.end(), item), m_items.end());
 				}
 				std::cout << "Usaste " << quantity << " de " << name << std::endl;
 				return;

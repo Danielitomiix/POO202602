@@ -48,11 +48,12 @@ main() {
 
 
 	Rectangulo rect(10.0, 5.0);
-	std::cout << "Area: " << rect.calcularArea() << std::endl;
-	std::cout << "Perimetro: " << rect.calcularPerimetro() << std::endl;
+	std::cout << "Rectangulo - Ancho: " << rect.getAncho() << ", Alto: " << rect.getAlto() << std::endl;
+	std::cout << "Area: " << rect.Area() << std::endl;
+	std::cout << "Perimetro: " << rect.Perimetro() << std::endl;
 
-
-	std::cout << "Hello World!" << std::endl;
+	Fecha fecha;
+	fecha.getFecha();
 	std::cin.get();
 	return 0;
 }
