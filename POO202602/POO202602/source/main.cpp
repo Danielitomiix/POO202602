@@ -4,6 +4,8 @@
 #include "Rectangulo.h"
 #include "Circulo.h"
 #include "Estudiantes.h"
+#include "Banco.h"
+#include "UsuarioBancario.h"
 
 
 class
@@ -76,6 +78,25 @@ main() {
 	for (int i = 0; i < 5; i++) {
 		miEstudiante[i].informacion();
 	}
+
+	Banco Santander;
+	UsuarioBancario Roberto = Santander.nuevoUsuario(CuentaBancaria("Roberto", 1222, 1500.0));
+	UsuarioBancario Carlos = Santander.nuevoUsuario(CuentaBancaria("Carlos", 3444, 800.0));
+
+	//Banco cuenta1("Eduardo", 123456, 1000.0);
+	//Banco cuenta2("Kevin", 654321, 500.0);
+
+	std::cout << "----- Saldos iniciales -----" << std::endl;
+	//cuenta1.consultarSaldo();
+	//cuenta2.consultarSaldo();
+
+	std::cout << "----- Realizando la transferencia: -----" << std::endl;
+	Santander.realizarTransferencia(Carlos, Roberto, 200.0, 1709);
+
+	std::cout << "----- Saldos despues de la transferencia -----" << std::endl;
+	//cuenta1.consultarSaldo();
+	//cuenta2.consultarSaldo();
+
 
 	std::cin.get();
 	return 0;
