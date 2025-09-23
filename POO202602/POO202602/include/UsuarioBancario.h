@@ -20,8 +20,7 @@ public:
 	        m_cashBack += monto;
     }
 	
-	CuentaBancaria&
-		getCuenta() {
+	CuentaBancaria&   getCuenta() {
 		return m_cuenta;
 	}
 
