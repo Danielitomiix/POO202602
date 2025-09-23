@@ -14,6 +14,11 @@ public:
 		m_uniquePoints = 5;
 	}
 	~UsuarioBancario() = default;
+
+    void 
+	setCashBack(double monto) {
+	        m_cashBack += monto;
+    }
 	
 	CuentaBancaria&
 		getCuenta() {
@@ -26,6 +31,6 @@ private:
 	int m_idUsuario;
 	Fecha  m_antiguedad;
 	std::vector<int> m_historialTransacciones;
-	int m_cashBack; // 1%  3% 5%
+	double m_cashBack; // 1%  3% 5%
 	int m_uniquePoints;
 };

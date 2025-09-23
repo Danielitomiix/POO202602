@@ -171,6 +171,7 @@
     <ClInclude Include="include\Inventary.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
+    <ClInclude Include="include\Producto.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
     <ClInclude Include="source\main.h" />
