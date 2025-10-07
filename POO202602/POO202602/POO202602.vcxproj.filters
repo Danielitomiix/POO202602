@@ -13,11 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source\main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns">
+      <UniqueIdentifier>{086a5ad6-07df-402b-84f7-0fbb452ba6ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -38,9 +36,6 @@
     <ClInclude Include="include\Estudiantes.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="source\main.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="include\CuentaBancaria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -53,5 +48,16 @@
     <ClInclude Include="include\Producto.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\MiSingleton.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\RegistroActividad.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main2.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

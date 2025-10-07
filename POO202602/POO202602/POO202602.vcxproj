@@ -161,9 +161,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="include\Banco.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Circulo.h" />
@@ -172,9 +169,13 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgramminPatterns\RegistroActividad.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
-    <ClInclude Include="source\main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
