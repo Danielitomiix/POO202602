@@ -169,6 +169,8 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\FactoryMethod.h" />
+    <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h" />
     <ClInclude Include="include\ProgramminPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgramminPatterns\RegistroActividad.h" />
     <ClInclude Include="include\Rectangulo.h" />
