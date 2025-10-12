@@ -5,6 +5,7 @@
 #include "ProgramminPatterns/FactoryMethodVehiculos.h"
 
 
+
 MiSingleton* MiSingleton::instancia = nullptr;
 RegistroActividad* RegistroActividad::instancia = nullptr;
 
@@ -50,6 +51,8 @@ int main() {
 
   delete miBici;
   delete fabricaBicis;
+
+
 
     return 0;
 }

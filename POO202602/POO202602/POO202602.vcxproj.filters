@@ -16,6 +16,15 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns">
       <UniqueIdentifier>{086a5ad6-07df-402b-84f7-0fbb452ba6ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\AbstractFactory">
+      <UniqueIdentifier>{d7afa9fd-c337-489c-a13d-3f3526abeea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramminPatterns">
+      <UniqueIdentifier>{4aa57b1b-ac1e-4c74-bb91-ef972993083c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramminPatterns\AbstractFactory">
+      <UniqueIdentifier>{62bccc7c-ef92-4aed-8fa8-a1fdc6749bfa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -60,10 +69,34 @@
     <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h">
       <Filter>Archivos de encabezado\ProgramminPatterns</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaAbstracta.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA1.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB1.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaConcreta.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoA1.cpp">
+      <Filter>Archivos de origen\ProgramminPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoB1.cpp">
+      <Filter>Archivos de origen\ProgramminPatterns\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

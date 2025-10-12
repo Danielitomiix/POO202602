@@ -169,6 +169,12 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaAbstracta.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaConcreta.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA1.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB1.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h" />
     <ClInclude Include="include\ProgramminPatterns\MiSingleton.h" />
@@ -178,6 +184,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoA1.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoB1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
