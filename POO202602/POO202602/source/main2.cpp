@@ -1,22 +1,24 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/AbstractFactory/FabricaConcreta.h"
+#include "ProgramminPatterns/AbstractFactory/AbstractFactoryMuebles/FactoriaMueblesRusticos.h"
+#include "ProgramminPatterns/AbstractFactory/AbstractFactoryMuebles/FactoriaMueblesModernos.h"
 
 
 
 int main() {
+  
+  FactoriaMuebles* fabrica = new FactoriaMueblesRusticos();
+  Silla* silla = fabrica->crearSilla();
+  Mesa* mesa = fabrica->crearMesa();
 
-  FabricaAbstracta* fabrica = new FabricaConcreta();
-  ProductoA* productoA = fabrica->crearProductoA();
-  ProductoB* productoB = fabrica->crearProductoB();
+  silla->descripcion();
+  silla->color();
 
-  productoA->operacionA();
-  productoB->operacionB();
+  mesa->descripcion();
+  mesa->color();
 
   delete fabrica;
-  delete productoA;
-  delete productoB;
-
-
-
+  delete silla;
+  delete mesa;
+  
     return 0;
 }

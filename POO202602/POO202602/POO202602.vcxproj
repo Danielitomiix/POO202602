@@ -169,6 +169,16 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisitos.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\FactoriaMuebles.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\FactoriaMueblesModernos.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\FactoriaMueblesRusticos.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\Mesa.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\MesaModerna.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\MesaRustica.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\Mueble.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\Silla.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\SillaModerna.h" />
+    <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\SillaRustica.h" />
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaAbstracta.h" />
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\FabricaConcreta.h" />
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA.h" />
@@ -184,8 +194,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\Mesa.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\MesaModerna.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\MesaRustica.cpp" />
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoA1.cpp" />
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\ProductoB1.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\Silla.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\SillaModerna.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\AbstractFactory\SillaRustica.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
