@@ -1,28 +1,32 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns\Builder\ConstrutorPizza.h"
-#include "ProgramminPatterns\Builder\BuilderPizzaHawaiana.h"
-#include "ProgramminPatterns/Builder/BuilderPizzaVegetariana.h"
-#include "ProgramminPatterns\Builder\Pizza.h"
+#include "ProgramminPatterns\Prototype\DocumentoTexto.h"
+#include "ProgramminPatterns\Prototype\DocumentoImagen.h"
+
+
 
 int main() {
-  ConstrutorPizza* construtorHawaiana = new BuilderPizzaHawaiana();
-  construtorHawaiana->buildIngredintes();
-  Pizza* pizzaHawaiana = construtorHawaiana->getPizza();
+  DocumentoPrototype* docTexto1 = new DocumentoTexto();
+  docTexto1->config("Este es un documento de texto.");
 
-  std::cout << "Pizza Hawaiana:\n";
-  pizzaHawaiana->show();
+  DocumentoPrototype* docImagen1 = new DocumentoImagen();
+  docImagen1->config("Este es un documento de imagen.");
 
-  ConstrutorPizza* construtorVegetariana = new BuilderPizzaVegetariana();
-  construtorVegetariana->buildIngredintes();
-  Pizza* pizzaVegetariana = construtorVegetariana->getPizza();
+  DocumentoPrototype* docTexto2 = docTexto1->clonar();
+  DocumentoPrototype* docImagen2 = docImagen1->clonar();
 
-  std::cout << "Pizza Vegetariana:\n";
-  pizzaVegetariana->show();
+  std::cout << " Originales " << std::endl;
+  docTexto1->Info();
+  docImagen1->Info();
+  
+  std::cout << " Clonandos " << std::endl;
+  docTexto2->Info();
+  docImagen2->Info();
 
-  delete construtorHawaiana;
-  delete pizzaHawaiana;
-  delete construtorVegetariana;
-  delete pizzaVegetariana;
+  // Liberar memoria
+  delete docTexto1;
+  delete docImagen1;
+  delete docTexto2;
+  delete docImagen2;
 
     return 0;
 }

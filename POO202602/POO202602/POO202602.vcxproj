@@ -196,6 +196,12 @@
     <ClInclude Include="include\ProgramminPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h" />
     <ClInclude Include="include\ProgramminPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\Documento.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\DocumentoImagen.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\DocumentoPrototype.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\DocumentoTexto.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\Prototype.h" />
+    <ClInclude Include="include\ProgramminPatterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\ProgramminPatterns\RegistroActividad.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
