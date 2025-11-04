@@ -138,6 +138,18 @@
     <ClInclude Include="include\ProgramminPatterns\Builder\Director.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\Pizza.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\ConstrutorPizza.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderPizzaHawaiana.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderPizzaVegetariana.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">

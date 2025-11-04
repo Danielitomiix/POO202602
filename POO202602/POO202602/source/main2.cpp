@@ -1,20 +1,28 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns\Builder\Builder.h"
-#include "ProgramminPatterns\Builder\BuilderConcreto.h"
-#include "ProgramminPatterns\Builder\Director.h"
+#include "ProgramminPatterns\Builder\ConstrutorPizza.h"
+#include "ProgramminPatterns\Builder\BuilderPizzaHawaiana.h"
+#include "ProgramminPatterns/Builder/BuilderPizzaVegetariana.h"
+#include "ProgramminPatterns\Builder\Pizza.h"
 
 int main() {
-  Builder* builder = new BuilderConcreto();
-  Director* director = new Director(builder);
+  ConstrutorPizza* construtorHawaiana = new BuilderPizzaHawaiana();
+  construtorHawaiana->buildIngredintes();
+  Pizza* pizzaHawaiana = construtorHawaiana->getPizza();
 
-  director->construct();
+  std::cout << "Pizza Hawaiana:\n";
+  pizzaHawaiana->show();
 
-  Producto* producto = builder->getProducto();
-  producto->show();
+  ConstrutorPizza* construtorVegetariana = new BuilderPizzaVegetariana();
+  construtorVegetariana->buildIngredintes();
+  Pizza* pizzaVegetariana = construtorVegetariana->getPizza();
 
-  delete producto;
-  delete director;
-  delete builder;
+  std::cout << "Pizza Vegetariana:\n";
+  pizzaVegetariana->show();
+
+  delete construtorHawaiana;
+  delete pizzaHawaiana;
+  delete construtorVegetariana;
+  delete pizzaVegetariana;
 
     return 0;
 }

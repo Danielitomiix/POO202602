@@ -187,7 +187,11 @@
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB1.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\BuilderConcreto.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderPizzaHawaiana.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderPizzaVegetariana.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\ConstrutorPizza.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Director.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h" />
