@@ -37,6 +37,9 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns\Prototype">
       <UniqueIdentifier>{e1970c12-863d-43c6-a8e5-db791b234fb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\Adapter">
+      <UniqueIdentifier>{3be0bc91-ada2-47ff-9506-fedb3ebf39c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -170,6 +173,30 @@
     </ClInclude>
     <ClInclude Include="include\ProgramminPatterns\Prototype\DocumentoImagen.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\InterfazVieja.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\InterfazNueva.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\Adaptador.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\Circulo.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\Cuadrado.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\Dibujable.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\CirculoAdapter.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Adapter\CuadradoAdapter.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

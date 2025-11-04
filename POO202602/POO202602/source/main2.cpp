@@ -1,32 +1,31 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns\Prototype\DocumentoTexto.h"
-#include "ProgramminPatterns\Prototype\DocumentoImagen.h"
+#include "ProgramminPatterns/Adapter/Circulo.h"
+#include "ProgramminPatterns/Adapter/CirculoAdapter.h"
+#include "ProgramminPatterns/Adapter/Cuadrado.h"
+#include "ProgramminPatterns/Adapter/CuadradoAdapter.h"
 
 
 
 int main() {
-  DocumentoPrototype* docTexto1 = new DocumentoTexto();
-  docTexto1->config("Este es un documento de texto.");
+  // Crear instancias de las clases existentes
+  Circulo* circulo = new Circulo();
+  Cuadrado* cuadrado = new Cuadrado();
 
-  DocumentoPrototype* docImagen1 = new DocumentoImagen();
-  docImagen1->config("Este es un documento de imagen.");
+  //Adaptalar a la interfaz Dibujable
+  Dibujable* circuloAdaptado = new CirculoAdapter(circulo);
+  Dibujable* cuadradoAdaptado = new CuadradoAdapter(cuadrado);
 
-  DocumentoPrototype* docTexto2 = docTexto1->clonar();
-  DocumentoPrototype* docImagen2 = docImagen1->clonar();
-
-  std::cout << " Originales " << std::endl;
-  docTexto1->Info();
-  docImagen1->Info();
-  
-  std::cout << " Clonandos " << std::endl;
-  docTexto2->Info();
-  docImagen2->Info();
+  // Uso los adaptadores para dibujar
+  std::cout << " Dibujos adaptados" << std::endl;
+  circuloAdaptado->dibujar();
+  cuadradoAdaptado->dibujar();
 
   // Liberar memoria
-  delete docTexto1;
-  delete docImagen1;
-  delete docTexto2;
-  delete docImagen2;
+  delete circuloAdaptado;
+  delete cuadradoAdaptado;
+  delete circulo;
+  delete cuadrado;
+
 
     return 0;
 }
