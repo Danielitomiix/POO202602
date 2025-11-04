@@ -1,24 +1,20 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/AbstractFactory/AbstractFactoryMuebles/FactoriaMueblesRusticos.h"
-#include "ProgramminPatterns/AbstractFactory/AbstractFactoryMuebles/FactoriaMueblesModernos.h"
-
-
+#include "ProgramminPatterns\Builder\Builder.h"
+#include "ProgramminPatterns\Builder\BuilderConcreto.h"
+#include "ProgramminPatterns\Builder\Director.h"
 
 int main() {
-  
-  FactoriaMuebles* fabrica = new FactoriaMueblesRusticos();
-  Silla* silla = fabrica->crearSilla();
-  Mesa* mesa = fabrica->crearMesa();
+  Builder* builder = new BuilderConcreto();
+  Director* director = new Director(builder);
 
-  silla->descripcion();
-  silla->color();
+  director->construct();
 
-  mesa->descripcion();
-  mesa->color();
+  Producto* producto = builder->getProducto();
+  producto->show();
 
-  delete fabrica;
-  delete silla;
-  delete mesa;
-  
+  delete producto;
+  delete director;
+  delete builder;
+
     return 0;
 }

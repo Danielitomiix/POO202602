@@ -185,6 +185,10 @@
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoA1.h" />
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\Builder.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderConcreto.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\Director.h" />
+    <ClInclude Include="include\ProgramminPatterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgramminPatterns\FactoryMethodVehiculos.h" />
     <ClInclude Include="include\ProgramminPatterns\MiSingleton.h" />
@@ -202,6 +206,7 @@
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\Silla.cpp" />
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\SillaModerna.cpp" />
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\SillaRustica.cpp" />
+    <ClCompile Include="source\ProgramminPatterns\Builder\BuilderConcreto.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

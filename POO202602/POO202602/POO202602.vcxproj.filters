@@ -28,6 +28,12 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns\AbstractFactory\AbtractFactoryMuebles">
       <UniqueIdentifier>{25525a61-daf7-4354-a6a3-547847b8d2ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\Builder">
+      <UniqueIdentifier>{beacba9b-ed5a-4d98-bc4e-056294fe1cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramminPatterns\Builder">
+      <UniqueIdentifier>{10b696cd-9d25-4fa0-841c-747a89967995}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -120,6 +126,18 @@
     <ClInclude Include="include\ProgramminPatterns\AbstractFactory\AbstractFactoryMuebles\FactoriaMueblesModernos.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\AbstractFactory\AbtractFactoryMuebles</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\Producto.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\Builder.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\BuilderConcreto.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Builder\Director.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -148,6 +166,9 @@
     </ClCompile>
     <ClCompile Include="source\ProgramminPatterns\AbstractFactory\MesaModerna.cpp">
       <Filter>Archivos de origen\ProgramminPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramminPatterns\Builder\BuilderConcreto.cpp">
+      <Filter>Archivos de origen\ProgramminPatterns\Builder</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
