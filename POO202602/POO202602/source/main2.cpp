@@ -1,31 +1,27 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/Adapter/Circulo.h"
-#include "ProgramminPatterns/Adapter/CirculoAdapter.h"
-#include "ProgramminPatterns/Adapter/Cuadrado.h"
-#include "ProgramminPatterns/Adapter/CuadradoAdapter.h"
+#include "ProgramminPatterns\Decorator\Cafeteria.h"
+#include "ProgramminPatterns\Decorator\leche.h"
+#include "ProgramminPatterns\Decorator\Azucar.h"
 
 
 
 int main() {
-  // Crear instancias de las clases existentes
-  Circulo* circulo = new Circulo();
-  Cuadrado* cuadrado = new Cuadrado();
+  Cafeteria* cafeteria = new Cafeteria();
+  Leche* cafeConLeche = new Leche(cafeteria);
+  Azucar* cafeConAzucar = new Azucar(cafeteria);
 
-  //Adaptalar a la interfaz Dibujable
-  Dibujable* circuloAdaptado = new CirculoAdapter(circulo);
-  Dibujable* cuadradoAdaptado = new CuadradoAdapter(cuadrado);
+  std::cout << "Cafe basico:" << std::endl;
+  cafeteria->prepararCafe();
 
-  // Uso los adaptadores para dibujar
-  std::cout << " Dibujos adaptados" << std::endl;
-  circuloAdaptado->dibujar();
-  cuadradoAdaptado->dibujar();
+  std::cout << "\nCafe con leche:" << std::endl;
+  cafeConLeche->prepararCafe();
 
-  // Liberar memoria
-  delete circuloAdaptado;
-  delete cuadradoAdaptado;
-  delete circulo;
-  delete cuadrado;
+  std::cout << "\nCafe con azucar:" << std::endl;
+  cafeConAzucar->prepararCafe();
 
+  delete cafeConAzucar;
+  delete cafeConLeche;
+  delete cafeteria;
 
     return 0;
 }

@@ -40,6 +40,9 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns\Adapter">
       <UniqueIdentifier>{3be0bc91-ada2-47ff-9506-fedb3ebf39c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\Decorator">
+      <UniqueIdentifier>{bacc555c-257a-45dc-bdb6-201c5755ed9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -197,6 +200,33 @@
     </ClInclude>
     <ClInclude Include="include\ProgramminPatterns\Adapter\CuadradoAdapter.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Componente.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\ComponenteConcreto.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Decorator.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\DecoratorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\DecoratorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Cafeteria.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Condimento.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Leche.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Decorator\Azucar.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
