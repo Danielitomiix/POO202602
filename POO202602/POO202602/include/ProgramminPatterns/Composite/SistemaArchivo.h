@@ -4,7 +4,7 @@
 #include "ProgramminPatterns/Composite/Sistema.h"
 
 class
-  SistemaArchivo : public Archivo, public Sistema {
+SistemaArchivo : public Archivo, public Sistema {
 public:
   SistemaArchivo() = default;
   ~SistemaArchivo() = default;
