@@ -1,27 +1,28 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns\Decorator\Cafeteria.h"
-#include "ProgramminPatterns\Decorator\leche.h"
-#include "ProgramminPatterns\Decorator\Azucar.h"
+#include "ProgramminPatterns/Composite/SistemaCarpeta.h"
+#include "ProgramminPatterns/Composite/SistemaArchivo.h"
 
 
 
 int main() {
-  Cafeteria* cafeteria = new Cafeteria();
-  Leche* cafeConLeche = new Leche(cafeteria);
-  Azucar* cafeConAzucar = new Azucar(cafeteria);
+  Sistema* archivo1 = new SistemaCarpeta();
+  Sistema* archivo2 = new SistemaArchivo();
 
-  std::cout << "Cafe basico:" << std::endl;
-  cafeteria->prepararCafe();
+  SistemaCarpeta* carpeta1 = new SistemaCarpeta();
+  SistemaCarpeta* carpeta2 = new SistemaCarpeta();
 
-  std::cout << "\nCafe con leche:" << std::endl;
-  cafeConLeche->prepararCafe();
+  carpeta1->agregarSistema(archivo1);
+  carpeta1->agregarSistema(archivo2);
 
-  std::cout << "\nCafe con azucar:" << std::endl;
-  cafeConAzucar->prepararCafe();
+  carpeta2->agregarSistema(carpeta1);
 
-  delete cafeConAzucar;
-  delete cafeConLeche;
-  delete cafeteria;
+  std::cout << " Sistema de archivos:" << std::endl;
+  carpeta2->info();
+
+  delete archivo1;
+  delete archivo2;
+  delete carpeta1;
+  delete carpeta2;
 
     return 0;
 }

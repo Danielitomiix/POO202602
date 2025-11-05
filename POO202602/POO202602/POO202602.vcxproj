@@ -201,6 +201,13 @@
     <ClInclude Include="include\ProgramminPatterns\Builder\Director.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\Archivo.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\Carpeta.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\Composite.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\Hoja.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\Sistema.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\SistemaArchivo.h" />
+    <ClInclude Include="include\ProgramminPatterns\Composite\SistemaCarpeta.h" />
     <ClInclude Include="include\ProgramminPatterns\Decorator\Azucar.h" />
     <ClInclude Include="include\ProgramminPatterns\Decorator\Cafeteria.h" />
     <ClInclude Include="include\ProgramminPatterns\Decorator\Componente.h" />
