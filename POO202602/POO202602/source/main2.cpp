@@ -1,28 +1,20 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/Composite/SistemaCarpeta.h"
-#include "ProgramminPatterns/Composite/SistemaArchivo.h"
-
+#include "ProgramminPatterns/Bridge/ImplementacionConcretaA.h"
+#include "ProgramminPatterns/Bridge/ImplementacionConcretaB.h"
+#include "ProgramminPatterns/Bridge/Abstraccion.h"
+#include "ProgramminPatterns/Bridge/AbstraccionRefinada.h"
+#include "ProgramminPatterns/Bridge/Implementacion.h"
 
 
 int main() {
-  Sistema* archivo1 = new SistemaCarpeta();
-  Sistema* archivo2 = new SistemaArchivo();
+  ImplementacionConcretaA impA;
+  ImplementacionConcretaB impB;
 
-  SistemaCarpeta* carpeta1 = new SistemaCarpeta();
-  SistemaCarpeta* carpeta2 = new SistemaCarpeta();
+  AbstraccionRefinada abstraccionA(&impA);
+  AbstraccionRefinada abstraccionB(&impB);
 
-  carpeta1->agregarSistema(archivo1);
-  carpeta1->agregarSistema(archivo2);
-
-  carpeta2->agregarSistema(carpeta1);
-
-  std::cout << " Sistema de archivos:" << std::endl;
-  carpeta2->info();
-
-  delete archivo1;
-  delete archivo2;
-  delete carpeta1;
-  delete carpeta2;
+  abstraccionA.operacion();
+  abstraccionB.operacion();
 
     return 0;
 }

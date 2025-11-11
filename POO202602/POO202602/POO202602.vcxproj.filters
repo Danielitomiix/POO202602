@@ -46,6 +46,9 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns\Composite">
       <UniqueIdentifier>{da90b2fd-4bc6-4955-a5e9-400ad05ab4dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\Bridge">
+      <UniqueIdentifier>{475e7b05-cc8c-470c-b903-e2742e9c5bd2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -251,6 +254,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgramminPatterns\Composite\SistemaCarpeta.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Bridge\Implementacion.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Bridge\ImplementacionConcretaA.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Bridge\ImplementacionConcretaB.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Bridge\Abstraccion.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\Bridge\AbstraccionRefinada.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
