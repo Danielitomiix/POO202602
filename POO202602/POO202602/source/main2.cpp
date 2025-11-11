@@ -1,20 +1,21 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/Bridge/ImplementacionConcretaA.h"
-#include "ProgramminPatterns/Bridge/ImplementacionConcretaB.h"
-#include "ProgramminPatterns/Bridge/Abstraccion.h"
-#include "ProgramminPatterns/Bridge/AbstraccionRefinada.h"
-#include "ProgramminPatterns/Bridge/Implementacion.h"
+#include "ProgramminPatterns/Bridge/TV.h"
+#include "ProgramminPatterns/Bridge/Radio.h"
+#include "ProgramminPatterns/Bridge/ControlRemoto.h"
 
 
 int main() {
-  ImplementacionConcretaA impA;
-  ImplementacionConcretaB impB;
+  TV tv;
+  Radio radio;
 
-  AbstraccionRefinada abstraccionA(&impA);
-  AbstraccionRefinada abstraccionB(&impB);
+  ControlRemoto controlTV(&tv);
+  ControlRemoto controlRadio(&radio);
 
-  abstraccionA.operacion();
-  abstraccionB.operacion();
+  controlTV.encenderDispositivo();
+  controlTV.apagarDispositivo();
+
+  controlRadio.encenderDispositivo();
+  controlRadio.apagarDispositivo();
 
     return 0;
 }
