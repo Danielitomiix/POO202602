@@ -1,21 +1,16 @@
 #include "Prerequisitos.h"
-#include "ProgramminPatterns/Bridge/TV.h"
-#include "ProgramminPatterns/Bridge/Radio.h"
-#include "ProgramminPatterns/Bridge/ControlRemoto.h"
-
+#include "ProgramminPatterns/chainOfResponsability/ManejadorConcretoA.h"
+#include "ProgramminPatterns/chainOfResponsability/ManejadorConcretoB.h"
+#include "ProgramminPatterns/chainOfResponsability/ManejadorConcretoC.h"
 
 int main() {
-  TV tv;
-  Radio radio;
 
-  ControlRemoto controlTV(&tv);
-  ControlRemoto controlRadio(&radio);
+  ManejadorConcretoC manejadorC(nullptr, "None");
+  ManejadorConcretoB manejadorB(&manejadorC, "Manejador C");
+  ManejadorConcretoA manejadorA(&manejadorB, "Manejador B");
 
-  controlTV.encenderDispositivo();
-  controlTV.apagarDispositivo();
 
-  controlRadio.encenderDispositivo();
-  controlRadio.apagarDispositivo();
+
 
     return 0;
 }

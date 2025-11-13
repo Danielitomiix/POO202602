@@ -210,6 +210,10 @@
     <ClInclude Include="include\ProgramminPatterns\Builder\Director.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgramminPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\Manejador.h" />
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoA.h" />
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoB.h" />
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoC.h" />
     <ClInclude Include="include\ProgramminPatterns\Composite\Archivo.h" />
     <ClInclude Include="include\ProgramminPatterns\Composite\Carpeta.h" />
     <ClInclude Include="include\ProgramminPatterns\Composite\Composite.h" />

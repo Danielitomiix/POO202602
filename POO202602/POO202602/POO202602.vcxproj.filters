@@ -49,6 +49,9 @@
     <Filter Include="Archivos de encabezado\ProgramminPatterns\Bridge">
       <UniqueIdentifier>{475e7b05-cc8c-470c-b903-e2742e9c5bd2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramminPatterns\chainOfResponsability">
+      <UniqueIdentifier>{0f3d3387-3e6f-4bc4-b9b0-7c88c40809a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisitos.h">
@@ -281,6 +284,18 @@
     </ClInclude>
     <ClInclude Include="include\ProgramminPatterns\Bridge\ControlRemoto.h">
       <Filter>Archivos de encabezado\ProgramminPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\Manejador.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\chainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\chainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\chainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramminPatterns\chainOfResponsability\ManejadorConcretoC.h">
+      <Filter>Archivos de encabezado\ProgramminPatterns\chainOfResponsability</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
